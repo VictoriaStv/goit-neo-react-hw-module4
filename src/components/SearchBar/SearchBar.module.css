@@ -1,0 +1,42 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 0;
+  background-color: blue;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  width: 33%;
+  position: relative;
+}
+
+.input {
+  width: 100%;
+  padding-left: 45px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+.button {
+  position: absolute;
+  left: 10px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.search {
+  color: gray;
+}
+
+.warn {
+  padding: 5px 10px;
+  color: orange;
+  background-color: green;
+}

@@ -1,0 +1,54 @@
+.modalImage {
+  width: 80vw;
+  height: auto;
+  max-height: 80vh;
+  display: block;
+  object-fit: cover;
+}
+
+.infoContainer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(50, 50, 50, 0.8);
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform 0.5s ease-out 0.5s, opacity 0.5s ease-out 0.5s;
+}
+
+.infoContainer.visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.infoText {
+  display: flex;
+  align-items: center;
+}
+
+.infoText span {
+  margin-left: 10px;
+}
+
+.icon {
+  margin-right: 5px;
+}
+
+.loaderContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  min-width: 80vw;
+  min-height: 80vh;
+}
